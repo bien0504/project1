@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int n,a,i,s=0;
+cin>>a;
+n=i=a;
+while(i--){
+	cin>>a;
+	s+=a%2;
+}
+cout<<s<<" "<<n-s;
+}
