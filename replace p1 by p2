@@ -1,0 +1,5 @@
+#PYTHON 
+p1=input()
+p2=input()
+str=input()
+print(str.replace(p1,p2))
