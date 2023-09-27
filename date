@@ -1,0 +1,8 @@
+#PYTHON 
+p=input()
+p = p.split('-')
+if len(p)!=3 or int(p[1])>12 or int(p[2])>32 or len(p[1])!=2 or len(p[2])!=2 :
+    print('INCORRECT')
+else:
+    for i in range(3):
+        print(int(p[i]),end=' ')
