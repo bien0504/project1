@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int n,k,a[100000];
+int main(){
+	cin>>n>>k;
+	int l=k;
+	int number=0;
+	long long tong=0;
+	for(int i=0;i<n;i++){
+		cin>>a[i];
+		if(l-->0) tong+=a[i];
+	}
+	for (int i=k;i<=n;i++){
+		if(tong%2==0) number++;
+		tong+=a[i]-a[i-k];
+	}
+	cout<<number;
+}
