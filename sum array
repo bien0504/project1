@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n,a;
+	long long tong;
+	cin>>n;
+	while(n--){
+		cin>>a;
+		tong+=a;
+	}
+	cout<<tong;
+}
