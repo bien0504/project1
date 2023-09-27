@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int check(string s){
+	if(s.size()!=8) {return 0;}
+	if(s[2]!=':'||s[5]!=':') {return 0;}
+	if((s[0]-'0')*10+s[1]-'0'>24) {return 0;}
+	if((s[3]-'0')*10+s[4]-'0'>59) {return 0;}
+	if((s[6]-'0')*10+s[7]-'0'>59) {return 0;}
+	return 1;
+}
+int main(){
+	string s;
+	cin>>s;
+	int a=0,b=0,c=0,d=0,e=0;
+	if(check(s)){
+		cout<<3600*((s[0]-'0')*10+s[1]-'0')+60*((s[3]-'0')*10+s[4]-'0')+(s[6]-'0')*10+s[7]-'0';
+	}
+	else cout<<"INCORRECT";
+}
